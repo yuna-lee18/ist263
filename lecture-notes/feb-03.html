@@ -1,6 +1,7 @@
 <!DOCTYPE html>
+
 <html lang="en">
-    
+
     <head>
         <meta charset="utf-8">
         <title>Title</title>
@@ -8,7 +9,75 @@
     </head>
 
     <body>
-        <p>Content goes here</p>
+        <h1>Tables</h1>
+        <table>
+            <caption>Here is the Caption</caption>
+            <tr>
+                <th>Country</th>
+                <th>Population</th>
+                <th>% of Population</th>
+            </tr>
+            <tr>
+                <td>China</td>
+                <td>1,403,830,640</td>
+                <td>18.0%</td>
+            </tr>
+            <tr>
+                <td>India</td>
+                <td>1,365,529,124</td>
+                <td>17%.5</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <form action="" method="post"> 
+            <label for="fname">First Name: </label>
+            <input type="text" id="fname" name="fname"> 
+
+            <br>
+            
+            <label for="comments">Comments: </label><br>
+            <textarea id ="comments" name="comments">
+
+            </textarea>
+            
+            <br>
+            <!-- Input with Type Radio-->
+            <p>Please select your age:</p>
+            <input type="radio" id="age1" name="age" value="30">
+            <label for="age1">0-30</label>
+            <input type="radio" id="age2" name="age" value="60">
+            <label for "age2">31-60</label>
+            <input type="radio" id="age3" name="age" value="100">
+            <label for "age3">61-100</label>
+
+            <br>
+
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1">I have a bike</label>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2">I have a car</label>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3">I have a Boat</label>
+            <br>
+
+            <label for="cars">Please choose a car model:</label>
+            <select name="cars" id="cars">
+                <option value="volvo">Volvo</option>
+                <option value="Saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+            </select>
+
+            <br>
+
+            <input type="submit" value="Send Form">
+
+
+
+        </form>
+
     </body>
 
 
