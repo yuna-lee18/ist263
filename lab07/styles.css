@@ -1,0 +1,18 @@
+body {background-color: #f7cac9;
+        color: #333333; 
+    }
+a {color: #92a8d1;}
+
+a:hover{color: #92a8d1;}
+
+h1,h2,h3,h4,h5,h6 {color: #abb1cf;}
+
+nav {
+    background-color: #dec2cb;
+    padding: 10px;
+    margin-bottom: 30px;
+    }
+
+nav a {color: #ffffff;}
+
+nav a:hover {background-color:  #ffffff;}
