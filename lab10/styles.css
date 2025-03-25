@@ -36,6 +36,7 @@ nav a:hover {background-color:  #ffffff;}
 
 .icons{
         display:flex;
+        flex-wrap: wrap;
         flex:3;
         justify-content: space-around;
         margin-top: 95px;
@@ -50,6 +51,7 @@ nav a:hover {background-color:  #ffffff;}
             }
 .flexbox2{
             display:flex;
+            flex-wrap: wrap;
         }
 
 .all {margin: 30px;}
