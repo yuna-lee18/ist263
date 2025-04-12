@@ -1,0 +1,157 @@
+body {background-color: #ffe7f3;
+    color:#000000
+}
+
+nav, .site-title, .copyright, h1, h2 {
+    font-family: 'Pangolin', cursive;
+}
+
+p, dl, dt, dd, ul, li {font-family: 'Comic Neue', cursive; line-height: 1.5;}
+
+dt {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.pangolin-regular {
+    font-family: "Pangolin", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.patrick-hand-regular {
+font-family: "Patrick Hand", cursive;
+font-weight: 400;
+font-style: normal;
+}
+
+a {color: #B0E0E6;}
+a:hover{color: #B0E0E6;}
+
+nav a {color: #000000;}
+nav a:hover {background-color:  #ffffff;}
+.site-title, nav {
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;  
+    }
+
+
+h1, h2 {text-align: center;}
+
+
+* {
+    box-sizing: border-box; /* looked up and added this to get rid of horizontal scroll? */
+  }
+
+
+
+
+.first-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    nav a {
+            display: block;
+            padding: 10px;
+        
+        }
+    nav span{display: none;}
+
+
+}
+
+#section1, #section2, #section3, #section4 {
+    background-color: #ffffff; 
+    border: 1px solid #ccc;   
+    border-radius: 10px;  
+    padding: 20px;      
+    margin: 0;     
+    max-width: 1000px;    
+    align-items: center;
+    }
+
+#main {display: block; padding: 0 20px; margin-top: 20px;}
+
+#second-header{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+#header-text {
+    flex: 1;
+    min-width: 300px;
+}
+#header-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+#section-row1, #section-row2 {
+    display: flex; 
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    
+    max-width: 1200px;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-left: auto;
+    padding: 0 20px;
+}
+#section1, #section2, #section3, #section4{
+    flex: 1;
+}
+
+@media (max-width: 800px) {
+    #section-row1, #section-row2 {
+        flex-direction: column;
+    }
+
+    #section1, #section2, #section3, #section4 {
+        min-width: 100%;      
+        margin-bottom: 20px; 
+    }
+}
+
+#anime iframe {
+    width: 100%;   
+    height: 315px; 
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.clear {clear: both;}
+.copyright {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
