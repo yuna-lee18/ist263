@@ -87,3 +87,10 @@ position: static;
 width: auto;
 height: auto;
 }
+
+.fieldset {
+    border: 1px solid #ccc;
+    padding: 1em;
+    width: max-content;
+    margin: 0;
+}
