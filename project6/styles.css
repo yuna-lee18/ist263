@@ -6,7 +6,7 @@ nav, .site-title, .copyright, h1, h2 {
     font-family: 'Pangolin', cursive;
 }
 
-p, dl, dt, dd, ul, li {font-family: 'Patrick Hand', cursive; line-height: 1.5;}
+p, dl, dt, dd, ul, li {font-family: 'Dekko', cursive; line-height: 1.5;}
 
 dt {
     margin-top: 10px;
@@ -20,11 +20,12 @@ dt {
     font-style: normal;
   }
 
-.patrick-hand-regular {
-font-family: "Patrick Hand", cursive;
+.dekko-regular {
+font-family: "Dekko", cursive;
 font-weight: 400;
 font-style: normal;
 }
+
 
 a {color: #B0E0E6;}
 a:hover{color: #B0E0E6;}
