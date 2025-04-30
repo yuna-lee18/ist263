@@ -19,9 +19,12 @@ document.addEventListener("DOMContentLoaded", function() {
         const slideshow = document.querySelector(slideshowClass);
         const slides = slideshow.querySelectorAll('.slide');
         const totalSlides = slides.length;
-        const currentSlideElement = slideshow.querySelector('#current-slide');
-        const totalSlideElement = slideshow.querySelector('#total-slides');
         
+        const slideCounter = slideshow.querySelector('.slide-counter');
+        const currentSlideElement = slideCounter.querySelector('.current-slide');
+        const totalSlideElement = slideCounter.querySelector('.total-slides');
+        
+        // Initialize the counters
         currentSlideElement.textContent = currentIndex + 1;
         totalSlideElement.textContent = totalSlides;
 
@@ -29,14 +32,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
         slideshow.querySelector('.right-arrow').addEventListener('click', function() {
             slides[currentIndex].classList.remove('active');
-            currentIndex = (currentIndex + 1) % totalSlides; 
+            currentIndex = (currentIndex + 1) % totalSlides;
             slides[currentIndex].classList.add('active');
             currentSlideElement.textContent = currentIndex + 1;
         });
 
         slideshow.querySelector('.left-arrow').addEventListener('click', function() {
             slides[currentIndex].classList.remove('active');
-            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; 
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
             slides[currentIndex].classList.add('active');
             currentSlideElement.textContent = currentIndex + 1;
         });
@@ -47,4 +50,5 @@ document.addEventListener("DOMContentLoaded", function() {
     setupSlideshow('.paragraph-slideshow-characters');
     setupSlideshow('.paragraph-slideshow-generations');
 });
+
 
