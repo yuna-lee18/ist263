@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const slideshow = document.querySelector(slideshowClass);
         const slides = slideshow.querySelectorAll('.slide');
         const totalSlides = slides.length;
-        const currentSlideElement = slideshow.querySelector('.current-slide');
-        const totalSlideElement = slideshow.querySelector('.total-slides');
+        const currentSlideElement = slideshow.querySelector('#current-slide');
+        const totalSlideElement = slideshow.querySelector('#total-slides');
         
         currentSlideElement.textContent = currentIndex + 1;
         totalSlideElement.textContent = totalSlides;
