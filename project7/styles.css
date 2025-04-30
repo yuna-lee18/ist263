@@ -1,0 +1,437 @@
+/* Used Throughout The Pages */
+body {
+    background-color: #ffe7f3;
+    color: #000000;
+    cursor: none;
+}
+
+nav, .site-title, .copyright, h1, h2 {
+    font-family: 'Pangolin', cursive;
+}
+
+p, dl, dt, dd, ul, li {
+    font-family: 'Dekko', cursive;
+    line-height: 1.5;
+}
+
+dt {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.pangolin-regular, .dekko-regular {
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pangolin-regular {
+    font-family: 'Pangolin', cursive;
+}
+
+.dekko-regular {
+    font-family: 'Dekko', cursive;
+}
+
+a {
+    color: #006e7d;
+}
+
+a:hover {
+    color: #f2c6de;
+}
+
+nav a {
+    color: #000000;
+}
+
+nav a:hover {
+    background-color: #ffffff;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.first-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.site-title {
+    font-size: 1rem;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#main-nav {
+    display: flex;
+    gap: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    .menu-icon {
+        display: block;
+    }
+
+    #main-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #ffffff;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        z-index: 10;
+    }
+
+    #menu-toggle:checked + .menu-icon + #main-nav {
+        display: flex;
+    }
+
+    #main-nav a {
+        padding: 15px;
+        text-align: center;
+        border-top: 1px solid #dddddd;
+    }
+
+    nav span {
+        display: none;
+    }
+}
+
+
+/* Boxes For Each Page */
+#section1, #section2, #section3, #section4, #care-section1, #care-section2, #care-section3, #care-section4, #video1, #video2, #video3, #video4, #video5, #video6, #references1, #references2, #references3 {
+    border-radius: 10px;
+    padding: 25px;
+    margin: 0;
+    max-width: 1000px;
+    align-items: center;
+    flex: 1;
+    transition: box-shadow 0.3s ease;
+}
+
+#section1 { background-color: #f7d9c4; }
+#section2 { background-color: #c9e4de; }
+#section3 { background-color: #dbcdf0; }
+#section4 { background-color: #c6def1; }
+#care-section1 { background-color: #faedcb; }
+#care-section2 { background-color: #f7d9c4; }
+#care-section3 { background-color: #c9e4de; }
+#care-section4 { background-color: #dbcdf0; }
+#video1 { background-color: #f7d9c4; }
+#video2 { background-color: #c9e4de; }
+#video3 { background-color: #dbcdf0; }
+#video4 { background-color: #c6def1; }
+#video5 { background-color: #faedcb; }
+#video6 { background-color: #f7d9c4; }
+#references1 { background-color: #c9e4de; }
+#references2 { background-color: #dbcdf0; }
+#references3 { background-color: #c6def1; }
+
+
+/* Index Page */
+#main {
+    display: block;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+#second-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 25px 20px;
+    margin-bottom: 40px;
+}
+
+#header-text, #header-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+#header-image {
+    text-align: center;
+}
+
+/*Rows For Boxes*/
+
+#section-row1, #section-row2, #section-care-row1, #section-care-row2 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    max-width: 1200px;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-left: auto;
+    padding: 0 25px;
+}
+
+@media (max-width: 800px) {
+    #section-row1, #section-row2, #section-references-row1, #section-references-row2, #section-references-row, #section-video-row1, #section-video-row2, #section-video-row3, #section-care-row1, #section-care-row2 {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #section1, #section2, #section3, #section4, #references1, #references2, #references3, #video1, #video2, #video3, #video4, #video5, #video6, #care-section1, #care-section2, #care-section3, #care-section4 {
+        min-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.video-container {
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    margin-top: auto;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/* References Page Box Structure */
+#section-references-row1, #section-references-row2, #section-references-row3 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    max-width: 1200px;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-left: auto;
+    justify-content: center;
+}
+
+/* Versions Page Row Box Structure */
+#section-video-row1, #section-video-row2, #section-video-row3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 30px auto;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    padding: 0 25px;
+    align-items: stretch;
+}
+
+/* Versions Page Videos Structure */
+#video1, #video2, #video3, #video4, #video5, #video6 {
+    width: 48%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 10px;
+    padding: 25px;
+    min-height: 500px;
+    margin: 0;
+    height: auto;
+    flex: 1 1 45%;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Created That Hover Shadow On Box */
+#section1:hover, #section2:hover, #section3:hover, #section4:hover, #references1:hover, #references2:hover, #references3:hover, #care-section1:hover, #care-section2:hover, #care-section3:hover, #care-section4:hover, #video1:hover, #video2:hover, #video3:hover, #video4:hover, #video5:hover, #video6:hover {
+    box-shadow: 0 0 15px rgba(169, 169, 169, 0.5);
+}
+
+/* Paragraph Description For Versions Page */
+.centered-paragraph-version {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+
+/* General Throughout Used */
+li, a {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+.copyright {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+/* Slide Show For Care Page */
+.paragraph-slideshow-backstory, .paragraph-slideshow-care, .paragraph-slideshow-characters, .paragraph-slideshow-generations {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    height: 100%;
+    flex: 1;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.slide {
+    display: none;
+    text-align: left;
+    font-family: 'Dekko', cursive;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.paragraph-slideshow-backstory.active, .paragraph-slideshow-care.active, .paragraph-slideshow-characters.active, .paragraph-slideshow-generations.active, .slide.active {
+    display: block;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 30px;
+    transform: translateY(50%);
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    z-index: 10;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000000;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.slide-counter {
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    font-family: 'Dekko', cursive;
+    color: #000000;
+}
+
+@media (max-width: 800px) {
+    .paragraph-slideshow-backstory, .paragraph-slideshow-care, .paragraph-slideshow-characters, .paragraph-slideshow-generations {
+        padding: 10px;
+    }
+}
+
+
+
+#section-care-row1, #section-care-row2 {
+    gap: 40px;
+    justify-content: center;
+}
+
+
+#section-care-row1 section, #section-care-row2 section {
+    flex: 1 1 45%;
+    min-height: 500px;
+    border-radius: 10px;
+    padding: 25px;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+/* Mouse Cursor Changer */
+.custom-cursor {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.pointer {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-image: url('../project/media/og_transparent.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
+    transition: transform 0.1s ease;
+}
+
+a, button, input, .custom-cursor {
+    cursor: none;
+}
+
+a:hover, button:hover, input:hover, .arrow:hover {
+    cursor: none;
+}
