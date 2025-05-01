@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function() {
         const currentSlideElement = slideCounter.querySelector('.current-slide');
         const totalSlideElement = slideCounter.querySelector('.total-slides');
         
-        // Initialize the counters
         currentSlideElement.textContent = currentIndex + 1;
         totalSlideElement.textContent = totalSlides;
 
