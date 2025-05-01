@@ -9,7 +9,7 @@ nav, .site-title, .copyright, h1, h2 {
     font-family: 'Pangolin', cursive;
 }
 
-p, dl, dt, dd, ul, li {
+p, dl, dt, dd, ul, li, a {
     font-family: 'Dekko', cursive;
     line-height: 1.5;
 }
@@ -435,4 +435,29 @@ a, button, input, .custom-cursor {
 
 a:hover, button:hover, input:hover, .arrow:hover {
     cursor: none;
+}
+
+
+
+
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+.skip:focus {
+position: static;
+width: auto;
+height: auto;
+}
+
+.fieldset {
+    border: 1px solid #ccc;
+    padding: 1em;
+    width: max-content;
+    margin: 0;
 }
