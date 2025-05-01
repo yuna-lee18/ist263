@@ -450,9 +450,9 @@ a:hover, button:hover, input:hover, .arrow:hover {
   }
 
 .skip:focus {
-position: static;
-width: auto;
-height: auto;
+    position: static;
+    width: auto;
+    height: auto;
 }
 
 .fieldset {
