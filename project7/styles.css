@@ -34,11 +34,11 @@ dt {
 }
 
 a {
-    color: #006e7d;
+    color: #004557;
 }
 
 a:hover {
-    color: #f2c6de;
+    color: #000000;
 }
 
 nav a {
@@ -47,6 +47,7 @@ nav a {
 
 nav a:hover {
     background-color: #ffffff;
+    color: #f2c6de;
 }
 
 h1, h2 {
